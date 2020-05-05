@@ -115,8 +115,9 @@
                             </legend>
                             <ul class="features-filter__list">
                                 <li class="features-filter__item">
-                                    <input class="features-filter__input" type="checkbox" name="" id="" checked>
-                                    <label class="features-filter__label" for="">
+                                    <input class="features-filter__input" type="checkbox" name="slider" id="slider"
+                                        checked>
+                                    <label class="features-filter__label" for="slider">
                                         Слайдер
                                     </label>
                                 </li>
@@ -162,19 +163,19 @@
                             <ul class="sorting-type__list">
                                 <li class="sorting-type__item">
                                     <input class="sorting-type__input" type="radio" name="price" id="price" checked>
-                                    <label class="sorting-type__label" id="price">
+                                    <label class="sorting-type__label" for="price">
                                         По цене:
                                     </label>
                                 </li>
                                 <li class="sorting-type__item">
                                     <input class="sorting-type__input" type="radio" name="type" id="type">
-                                    <label class="sorting-type__label" id="type">
+                                    <label class="sorting-type__label" for="type">
                                         По типу:
                                     </label>
                                 </li>
                                 <li class="sorting-type__item">
                                     <input class="sorting-type__input" type="radio" name="name" id="name">
-                                    <label class="sorting-type__label" id="name">
+                                    <label class="sorting-type__label" for="name">
                                         По названию:
                                     </label>
                                 </li>
@@ -182,15 +183,14 @@
                         </div>
                         <ul class="sorting-form__direction sorting-direction">
                             <li class="sorting-direction__item">
-                                <input class="sorting-direction__input" class="" type="radio" name="smaller"
-                                    id="smaller">
-                                <label class="sorting-direction__label" id="smaller">
+                                <input class="sorting-direction__input" type="radio" name="smaller" id="smaller">
+                                <label class="sorting-direction__label" for="smaller">
 
                                 </label>
                             </li>
                             <li class="sorting-direction__item">
                                 <input class="sorting-direction__input" type="radio" name="bigger" id="bigger">
-                                <label class="sorting-direction__label" id="bigger">
+                                <label class="sorting-direction__label" for="bigger">
 
                                 </label>
                             </li>
@@ -208,9 +208,11 @@
                             </div>
                             <div class="site-example__img"><img src="" alt=""></div>
                             <div class="site-example__details site-details">
-                                <h3 class="site-details__title">
-                                    Sedona
-                                </h3>
+                                <a class="site-details__link" href="#">
+                                    <h3 class="site-details__title">
+                                        Sedona
+                                    </h3>
+                                </a>
                                 <p class="site-details__text">
                                     Информационный сайт для туристов
                                 </p>
@@ -227,9 +229,11 @@
                             </div>
                             <div class="site-example__img"><img src="" alt=""></div>
                             <div class="site-example__details site-details">
-                                <h3 class="site-details__title">
-                                    Pink App
-                                </h3>
+                                <a class="site-details__link" href="#">
+                                    <h3 class="site-details__title">
+                                        Pink App
+                                    </h3>
+                                </a>
                                 <p class="site-details__text">
                                     Продуктовый лендинг приложения для iOS и Android
                                 </p>
@@ -246,9 +250,11 @@
                             </div>
                             <div class="site-example__img"><img src="" alt=""></div>
                             <div class="site-example__details site-details">
-                                <h3 class="site-details__title">
-                                    Barbershop
-                                </h3>
+                                <a class="site-details__link" href="#">
+                                    <h3 class="site-details__title">
+                                        Barbershop
+                                    </h3>
+                                </a>
                                 <p class="site-details__text">
                                     Сайт салона красоты. Для мужчин, да.
                                 </p>
@@ -265,9 +271,11 @@
                             </div>
                             <div class="site-example__img"><img src="" alt=""></div>
                             <div class="site-example__details site-details">
-                                <h3 class="site-details__title">
-                                    Mishka
-                                </h3>
+                                <a class="site-details__link" href="#">
+                                    <h3 class="site-details__title">
+                                        Mishka
+                                    </h3>
+                                </a>
                                 <p class="site-details__text">
                                     Интернет-магазин вязаных игрушек
                                 </p>
@@ -284,9 +292,11 @@
                             </div>
                             <div class="site-example__img"><img src="" alt=""></div>
                             <div class="site-example__details site-details">
-                                <h3 class="site-details__title">
-                                    A Plus
-                                </h3>
+                                <a class="site-details__link" href="#">
+                                    <h3 class="site-details__title">
+                                        A Plus
+                                    </h3>
+                                </a>
                                 <p class="site-details__text">
                                     Лендинг курсов повышения квалификации
                                 </p>
@@ -303,9 +313,11 @@
                             </div>
                             <div class="site-example__img"><img src="" alt=""></div>
                             <div class="site-example__details site-details">
-                                <h3 class="site-details__title">
-                                    Кваст
-                                </h3>
+                                <a class="site-details__link" href="#">
+                                    <h3 class="site-details__title">
+                                        Кваст
+                                    </h3>
+                                </a>
                                 <p class="site-details__text">
                                     Промо-сайт производителя крафтового кваса
                                 </p>
@@ -318,6 +330,7 @@
                 </section>
 
                 <section class="template-sorting__pagination template-pagination">
+                    <h2 class="visually-hidden">Навигация по страницам шаблонов</h2>
                     <ul class="template-pagination__list">
                         <li class="template-pagination__item">
                             <a>1</a>
@@ -382,9 +395,10 @@
         </div>
     </footer>
 
-    <h2>Напишите нам</h2>
-    <!-- Здесь будет форма -->
-    <button type="button">Закрыть</button>
+    <section>
+        <h2>Напишите нам</h2>
+        <!-- Здесь будет форма -->
+        <button type="button">Закрыть</button>
 
     </section>
 </body>
