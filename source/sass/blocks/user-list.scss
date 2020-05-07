@@ -1,0 +1,29 @@
+.user-list__item {
+  position: relative;
+}
+
+.user-list__link {
+  @include nav-link;
+
+  &--basket {
+    padding-left: 39px;
+  }
+}
+
+.user-list__icon {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  fill: $grey;
+  transition: 0.4s ease;
+}
+
+.user-list__link:hover ~ .user-list__icon,
+.user-list__link:focus ~ .user-list__icon {
+  fill: $red;
+}
+
+.user-list__link:active ~ .user-list__icon {
+  fill: $black;
+  fill-opacity: 0.2;
+}

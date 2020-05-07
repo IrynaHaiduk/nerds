@@ -1,0 +1,15 @@
+
+.logo__img {
+  width: 160px;
+  height: 65px;
+  transition: 0.4s ease;
+}
+
+.logo__link[href]:hover .logo__img,
+.logo__link[href]:focus .logo__img {
+  opacity: 0.8;
+}
+
+.logo__link[href]:active .logo__img {
+  opacity: 0.3;
+}
