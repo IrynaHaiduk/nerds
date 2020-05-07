@@ -1,0 +1,10 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  margin-top: 16px;
+}
+
+.main-nav__list:first-of-type {
+  margin-right: auto;
+}

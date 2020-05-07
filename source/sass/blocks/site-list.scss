@@ -1,0 +1,17 @@
+.site-list {
+  display: flex;
+
+  width: 440px;
+}
+
+.site-list__item {
+  margin-right: 47px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.site-list__link {
+  @include nav-link;
+}

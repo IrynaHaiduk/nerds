@@ -1,0 +1,40 @@
+@mixin font($fsize, $lheight, $fweight: 400) {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: $fsize;
+  line-height: $lheight;
+  font-weight: $fweight;
+}
+
+@mixin text-style($color, $texttr: none) {
+  color: $color;
+  text-transform: $texttr;
+}
+
+@mixin container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1200px;
+}
+
+@mixin nav-link {
+  transition: 0.4s ease;
+
+  @include font(16px, 30px, 500);
+  @include text-style($black, uppercase);
+  outline: none;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: red;
+  }
+
+  &[href]:active {
+    color: $black;
+    opacity: 0.3;
+  }
+
+  &--active {
+    border-bottom: 2px solid $red;
+    padding-bottom: 9px;
+  }
+}

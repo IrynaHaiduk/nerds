@@ -1,0 +1,11 @@
+.page-heading__title {
+  @include font(55px, 55px, 500);
+  text-align: center;
+  margin: 0;
+}
+
+.page-heading__wrapper {
+  @include container;
+  padding-top: 79px;
+  padding-bottom: 106px;
+}
