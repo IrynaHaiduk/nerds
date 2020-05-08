@@ -1,0 +1,31 @@
+.contacts {
+  background-color: $white;
+  width: 320px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contacts__title {
+  @include font(18px, 30px, 700);
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
+.contacts__text {
+  @include text-grey;
+  margin-bottom: 18px;
+}
+
+.contacts__tel {
+  @include text-grey;
+  cursor: pointer;
+  margin-bottom: 37px;
+  display: block;
+}
+
+.contacts__button {
+ @include  link-btn($red, $red2, $red3);
+ width: 220px;
+}

@@ -5,3 +5,8 @@
 .page-main__slider {
   background-color: $light-grey;
 }
+
+.page-main__company,
+.page-main__partners {
+  @include container;
+}

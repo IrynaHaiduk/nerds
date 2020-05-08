@@ -1,11 +1,11 @@
 .site-list {
   display: flex;
-
+  flex-wrap: wrap;
   width: 440px;
 }
 
 .site-list__item {
-  margin-right: 47px;
+  margin-right: 46px;
 
   &:last-of-type {
     margin-right: 0;

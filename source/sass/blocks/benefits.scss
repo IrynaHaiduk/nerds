@@ -1,8 +1,6 @@
 .benefits__item {
   display: none;
   background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
   padding: 78px 0 80px 0;
 
   &:nth-of-type(1) {
@@ -42,35 +40,13 @@
 .benefits__text {
   max-width: 410px;
 
-  @include font(16px, 24px);
+  @include text;
   margin-bottom: 40px;
 }
 
 .benefits__link {
-  display: block;
-  width: 240px;
-  padding: 14px 0;
-
-  @include font(16px, 18px);
-  color: $white;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  background-color: $red;
-  border-radius: 3px;
-  border: none;
-  transition: 0.4s ease;
-}
-
-.benefits__link:hover,
-.benefits__link:focus {
-  background-color: $red2;
-}
-
-.benefits__link:active {
-  color: rgba($black, 0.3);
-  background-color: $red3;
-  box-shadow: 0 3px rgba($black, 0.1) inset;
+ @include link-btn($red, $red2, $red3);
+ width: 240px;
 }
 
 .controls__input--1:checked ~ .benefits .benefits__item:nth-child(1) {

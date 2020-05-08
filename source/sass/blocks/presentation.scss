@@ -1,0 +1,41 @@
+.presentation {
+width: 660px;
+padding-top: 36px;
+}
+
+.presentation__title {
+  @include font(45px, 45px, 500);
+  margin-bottom: 32px;
+}
+
+.presentation__text {
+  @include text;
+  margin-bottom: 40px;
+}
+
+.presentation__subtitle {
+  @include subtitle;
+  margin-bottom: 26px;
+}
+
+.presentation__item {
+ @include text-little;
+ margin-bottom: 30px;
+ padding-left: 36px;
+ position: relative;
+
+ &:last-of-type {
+   margin-bottom: 0;
+ }
+
+ &::before {
+   content: "";
+   width: 25px;
+   height: 2px;
+   background-color: $red;
+   position: absolute;
+   left: 0;
+   top: 50%;
+ }
+}
+

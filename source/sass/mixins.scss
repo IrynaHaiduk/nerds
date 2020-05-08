@@ -38,3 +38,49 @@
     padding-bottom: 9px;
   }
 }
+
+@mixin link-btn($link, $hover, $active) {
+  display: block;
+  background-color: $link;
+  @include font(16px, 18px, 500);
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 3px;
+  border: none;
+  transition: 0.4s ease;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $hover;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $active;
+    box-shadow: 0 3px rgba($black, 0.1) inset;
+  }
+}
+
+@mixin text {
+  @include font(16px, 24px);
+  color: $dark-black;
+}
+
+@mixin text-little {
+  @include font(16px, 18px);
+  color: $dark-black;
+}
+
+@mixin subtitle {
+  @include font(16px, 24px, 700);
+  text-transform: uppercase;
+}
+
+@mixin text-grey {
+  @include font(16px, 18px);
+  color: $dark-grey;
+}
