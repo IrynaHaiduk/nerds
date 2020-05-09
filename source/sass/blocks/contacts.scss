@@ -7,6 +7,22 @@
   padding-right: 50px;
 }
 
+.contacts  {
+  position: relative;
+
+  @include container;
+}
+
+.contacts__wrapper {
+  width: 320px;
+  background-color: white;
+  position: absolute;
+  top: 54px;
+  left: 20px;
+  z-index: 10;
+  padding: 50px;
+}
+
 .contacts__title {
   @include font(18px, 30px, 700);
   text-transform: uppercase;
@@ -21,7 +37,7 @@
 .contacts__tel {
   @include text-grey;
   cursor: pointer;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
   display: block;
 }
 

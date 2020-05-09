@@ -1,0 +1,37 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials__item {
+  margin-right: 10px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $light-grey3;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: 0.4s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $red2;
+  }
+
+  &:active .socials__icon {
+    background-color: $red3;
+    opacity: 0.3;
+  }
+
+  &:active  {
+    background-color: $red3;
+  }
+}

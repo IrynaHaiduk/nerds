@@ -1,0 +1,11 @@
+.page-footer__wrapper {
+  @include container;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.page-footer__socials {
+  margin-right: 140px;
+}

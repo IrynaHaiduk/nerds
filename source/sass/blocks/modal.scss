@@ -1,0 +1,121 @@
+.modal {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 190px;
+  z-index: 200;
+  margin-right: auto;
+  margin-left: auto;
+  width: 960px;
+  background-color: $white;
+  box-shadow: 0 30px 50px rgba($black, 0.7);
+  padding-top: 75px;
+  padding-bottom: 85px;
+  padding-left: 115px;
+  padding-right: 85px;
+}
+
+.modal__title {
+  @include font(45px, 45px, 500);
+  margin-bottom: 50px;
+}
+
+.modal__label {
+  @include font(16px, 18px, 700);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.modal__input {
+  width: 100%;
+  padding: 13px 14px 13px 14px;
+  border: 2px solid $light-grey4;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.4s ease;
+
+  @include font(16px, 18px);
+
+  &:hover {
+    cursor: pointer;
+    border-color: $dark-grey3;
+  }
+
+  &:focus {
+    border-color: $black;
+    color: $black;
+  }
+
+  &::placeholder {
+    @include font(16px, 18px);
+    opacity: 50%;
+    color: $dark-grey2;
+  }
+
+  &--textarea {
+    height: 118px;
+    margin-bottom: 50px;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border: 2px solid $red;
+    color: $red;
+  }
+}
+
+.modal__input:focus::placeholder {
+  color: transparent;
+}
+
+.modal__wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.modal__item {
+  width: 360px;
+
+  &:first-of-type {
+    margin-right: 40px;
+  }
+}
+
+.modal__btn {
+  @include link-btn($red, $red2, $red3);
+  width: 260px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 35px;
+  height: 3px;
+  background-color: $red;
+}
+
+.modal__close::before {
+  transform: rotate(45deg);
+}
+
+.modal__close::after {
+  transform: rotate(-45deg);
+}
