@@ -1,10 +1,11 @@
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   left: 0;
   right: 0;
   bottom: 190px;
   z-index: 200;
+  margin-top: auto;
   margin-right: auto;
   margin-left: auto;
   width: 960px;
@@ -109,13 +110,42 @@
   left: 0;
   width: 35px;
   height: 3px;
-  background-color: $red;
+  background-color: rgba($red, 0.5);
+  transition: 0.4s ease;
 }
 
 .modal__close::before {
   transform: rotate(45deg);
 }
 
+
+.modal__close:hover::before,
+.modal__close:focus::before {
+  background-color: $red;
+}
+
+.modal__close:active::before {
+  background-color: rgba($red, 0.3);
+}
+
+.modal__close:hover::after,
+.modal__close:focus::after {
+  background-color: $red;
+}
+
+.modal__close:active::after {
+  background-color: rgba($red, 0.3);
+}
+
 .modal__close::after {
   transform: rotate(-45deg);
+}
+
+.modal__show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal__error {
+  animation: shake 0.6s;
 }
