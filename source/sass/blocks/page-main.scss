@@ -10,3 +10,13 @@
 .page-main__partners {
   @include container;
 }
+
+.page-main__wrapper {
+  @include container;
+  display: flex;
+  padding-top: 56px;
+}
+
+.page-main__filters {
+  margin-right: auto;
+}

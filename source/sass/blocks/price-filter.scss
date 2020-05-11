@@ -1,0 +1,8 @@
+.price-filter {
+  margin-bottom: 53px;
+}
+
+.price-filter__title {
+  @include legend;
+  margin-bottom: 48px;
+}

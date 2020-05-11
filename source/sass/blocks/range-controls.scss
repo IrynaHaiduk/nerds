@@ -1,0 +1,42 @@
+.range-controls {
+  height: 80px;
+  background-color: $light-grey;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.range-controls__scale {
+  height: 2px;
+  background-color: $light-grey4;
+}
+
+.range-controls__bar {
+  width: 70%;
+  height: 2px;
+  background: $green;
+}
+
+.range-controls__toggle {
+  box-sizing: content-box;
+  width: 4px;
+  height: 4px;
+  border: 8px solid $white;
+  background-color: $dark-grey4;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 $grey2;
+  position: absolute;
+  top: 30px;
+  cursor: pointer;
+}
+
+.range-controls__toggle--min {
+  left: 50px;
+}
+
+.range-controls__toggle--max {
+  left: 110px;
+}

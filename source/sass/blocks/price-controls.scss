@@ -1,0 +1,29 @@
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls__label {
+  display: inline-block;
+  width: 50%;
+
+  @include font(16px, 22px);
+  @include text-style($dark-black, uppercase);
+
+  &--max {
+    text-align: right;
+  }
+}
+
+.price-controls__input {
+  width: 80px;
+  padding: 8px 10px;
+  outline: 0;
+
+  @include font(16px, 22px);
+  color: $dark-black;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background: $light-grey;
+  margin-left: 10px;
+}

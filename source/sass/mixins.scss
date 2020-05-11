@@ -84,3 +84,14 @@
   @include font(16px, 18px);
   color: $dark-grey;
 }
+
+@mixin legend {
+  @include font(18px, 30px, 700);
+  text-transform: uppercase;
+
+}
+
+@mixin label {
+  @include font(16px, 20px);
+  color: $dark-grey;
+}
