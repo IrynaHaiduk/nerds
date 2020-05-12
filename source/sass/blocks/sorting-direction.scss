@@ -1,0 +1,32 @@
+.sorting-direction {
+  display: flex;
+  width: 40px;
+}
+
+.sorting-direction__item {
+  margin-right: 18px;
+
+  &:last-of-direction {
+    margin-right: 0;
+  }
+}
+
+.sorting-direction__label {
+
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.4s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.sorting-direction__input:checked + .sorting-direction__label {
+  opacity: 1;
+}

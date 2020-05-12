@@ -31,6 +31,13 @@
   position: absolute;
   top: 30px;
   cursor: pointer;
+  transition: 0.4s ease;
+
+  &:hover {
+    border-width: 10px;
+    box-shadow: 0 2px 1px 0 $grey;
+    top: 28px;
+  }
 }
 
 .range-controls__toggle--min {

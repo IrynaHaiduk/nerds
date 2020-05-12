@@ -65,6 +65,10 @@
   border-color: $dark-grey5;
 }
 
+.features-filter__input:focus + .features-filter__label::before {
+  box-shadow: 0 0 0 2px $dark-grey;
+}
+
 .features-filter__input:hover + .features-filter__label {
   color: $dark-grey5;
 }

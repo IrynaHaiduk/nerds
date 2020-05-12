@@ -1,20 +1,44 @@
+.site-example {
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 10px 10px 0 $grey4;
+  }
+}
+
+.site-example__top {
+  opacity: 0.12;
+  transition: 0.4 ease;
+}
+
 .site-example__img {
   width: 360px;
   height: 576px;
-  padding-top: 40px;
-  position: relative;
+  box-shadow: 0 0 0 1px  $light-grey5;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
+  & img {
     width: 360px;
-    height: 40px;
-    background-image: url("../img/browser.svg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    opacity: 0.12;
+    height: 576px;
   }
+}
+
+.site-example__details {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  transition: 0.4 ease;
+}
+
+.site-example:hover .site-example__top {
+  opacity: 1;
+}
+
+.site-example:hover .site-example__details {
+  display: block;
+}
+
+.site-example:hover .site-example__img {
+  border: none;
 }

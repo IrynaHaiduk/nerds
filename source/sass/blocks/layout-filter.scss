@@ -70,6 +70,10 @@
 color: $dark-grey5;
 }
 
+.layout-filter__input:focus + .layout-filter__label::before {
+  box-shadow: 0 0 0 2px $dark-grey;
+}
+
 .layout-filter__input:disabled + .layout-filter__label::before {
   border-color: rgba($grey3, 0.2);
 

@@ -1,0 +1,47 @@
+.sorting-type {
+  display: flex;
+  margin-right: auto;
+  width: 680px;
+  align-items: baseline;
+}
+
+.sorting-type__title {
+  @include legend;
+  display: block;
+  margin-right: auto;
+}
+
+.sorting-type__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sorting-type__item {
+  margin-right: 30px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.sorting-type__label {
+  @include font(14px, 18px);
+  text-transform: uppercase;
+  color: $black;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.4s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.sorting-type__input:checked + .sorting-type__label {
+  opacity: 1;
+}

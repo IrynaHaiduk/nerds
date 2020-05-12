@@ -25,7 +25,7 @@
 
   &[href]:hover,
   &[href]:focus {
-    color: red;
+    color: $red;
   }
 
   &[href]:active {
@@ -94,4 +94,28 @@
 @mixin label {
   @include font(16px, 20px);
   color: $dark-grey;
+}
+
+@mixin grey-btn {
+  display: block;
+  border: none;
+  outline: none;
+  background-color: $light-grey;
+  border-radius: 4px;
+  color: $black;
+
+  @include font(16px, 18px, 500);
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $grey4;
+  }
+
+  &:active {
+    background-color: $grey5;
+    color: rgba($black, 0.3);
+    box-shadow: inset 0 3px  0 0 $dark-grey6;
+  }
 }

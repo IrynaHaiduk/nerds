@@ -1,0 +1,22 @@
+.template-examples__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 58px;
+}
+
+.template-examples__item {
+  margin-right: 40px;
+  width: 360px;
+  margin-bottom: 33px;
+  position: relative;
+
+  &:nth-last-of-type(1),
+  &:nth-last-of-type(2) {
+    margin-bottom: 0;
+  }
+
+  &:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}

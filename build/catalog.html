@@ -153,8 +153,8 @@
       </section>
 
       <section class="page-main__sorting template-sorting">
-        <h2 class="visually-hidden">Список готовых шаблонов</h2>
-        <form class="template-filters__form sorting-form" method="get" action="https://echo.htmlacademy.ru">
+        <h2 class="visually-hidden">Примеры готовых шаблонов</h2>
+        <form class="template-sorting__form sorting-form" method="get" action="https://echo.htmlacademy.ru">
           <div class="sorting-form__wrapper">
             <div class="sorting-form__type sorting-type">
               <h3 class="sorting-type__title">
@@ -162,36 +162,42 @@
               </h3>
               <ul class="sorting-type__list">
                 <li class="sorting-type__item">
-                  <input class="sorting-type__input" type="radio" name="price" id="price" checked="">
-                  <label class="sorting-type__label" for="price">
-                    По цене:
+                  <input class="sorting-type__input visually-hidden" type="radio" name="sorting" id="price" checked="">
+                  <label class="sorting-type__label sorting-type__label--active" for="price">
+                    По цене
                   </label>
                 </li>
                 <li class="sorting-type__item">
-                  <input class="sorting-type__input" type="radio" name="type" id="type">
+                  <input class="sorting-type__input visually-hidden" type="radio" name="sorting" id="type">
                   <label class="sorting-type__label" for="type">
-                    По типу:
+                    По типу
                   </label>
                 </li>
                 <li class="sorting-type__item">
-                  <input class="sorting-type__input" type="radio" name="name" id="name">
+                  <input class="sorting-type__input visually-hidden" type="radio" name="sorting" id="name">
                   <label class="sorting-type__label" for="name">
-                    По названию:
+                    По названию
                   </label>
                 </li>
               </ul>
             </div>
             <ul class="sorting-form__direction sorting-direction">
               <li class="sorting-direction__item">
-                <input class="sorting-direction__input" type="radio" name="smaller" id="smaller">
-                <label class="sorting-direction__label" for="smaller">
-
+                <input class="sorting-direction__input visually-hidden" type="radio" name="direction" id="down" checked="">
+                <label class="sorting-direction__label" for="down">
+                  <svg role="img" class="socials__icon socials__icon--vkontakte" width="11" height="10" aria-label="Направление вниз">
+                    <use xlink:href="./img/sprite.svg#icon-down-dir">
+                    </use>
+                  </svg>
                 </label>
               </li>
               <li class="sorting-direction__item">
-                <input class="sorting-direction__input" type="radio" name="bigger" id="bigger">
-                <label class="sorting-direction__label" for="bigger">
-
+                <input class="sorting-direction__input visually-hidden" type="radio" name="direction" id="up">
+                <label class="sorting-direction__label" for="up" aria-label="Направление вверх">
+                  <svg role="img" class="socials__icon socials__icon--vkontakte" width="11" height="10">
+                    <use xlink:href="./img/sprite.svg#icon-up-dir">
+                    </use>
+                  </svg>
                 </label>
               </li>
             </ul>
@@ -201,11 +207,8 @@
         <section class="template-sorting__examples template-examples">
           <ul class="template-examples__list">
             <li class="template-examples__item site-example">
-              <div class="site-example__top top">
-                <!--Сделаем беграундом псевдоэлемента картинки-->
-                <div class="top__item"></div>
-                <div class="top__item"></div>
-                <div class="top__item"></div>
+              <div class="site-example__top">
+                <img src="./img/browser.svg" width="360" height="40" alt="Top">
               </div>
               <div class="site-example__img">
                 <picture>
@@ -220,7 +223,7 @@
                   </h3>
                 </a>
                 <p class="site-details__text">
-                  Информационный сайт для туристов
+                  Информационный сайт для&nbsp;туристов
                 </p>
                 <button class="site-details__button" type="submit">
                   9 900 руб.
@@ -228,10 +231,8 @@
               </div>
             </li>
             <li class="template-examples__item site-example">
-              <div class="site-example__top top">
-                <div class="top__item"></div>
-                <div class="top__item"></div>
-                <div class="top__item"></div>
+              <div class="site-example__top">
+                <img src="./img/browser.svg" width="360" height="40" alt="Top">
               </div>
               <div class="site-example__img">
                 <picture>
@@ -254,10 +255,8 @@
               </div>
             </li>
             <li class="template-examples__item site-example">
-              <div class="site-example__top top">
-                <div class="top__item"></div>
-                <div class="top__item"></div>
-                <div class="top__item"></div>
+              <div class="site-example__top">
+                <img src="./img/browser.svg" width="360" height="40" alt="Top">
               </div>
               <div class="site-example__img">
                 <picture>
@@ -272,7 +271,7 @@
                   </h3>
                 </a>
                 <p class="site-details__text">
-                  Сайт салона красоты. Для мужчин, да.
+                  Сайт салона красоты. Для&nbsp;мужчин, да.
                 </p>
                 <button class="site-details__button" type="submit">
                   9 900 руб.
@@ -280,10 +279,8 @@
               </div>
             </li>
             <li class="template-examples__item site-example">
-              <div class="site-example__top top">
-                <div class="top__item"></div>
-                <div class="top__item"></div>
-                <div class="top__item"></div>
+              <div class="site-example__top">
+                <img src="./img/browser.svg" width="360" height="40" alt="Top">
               </div>
               <div class="site-example__img">
                 <picture>
@@ -298,7 +295,7 @@
                   </h3>
                 </a>
                 <p class="site-details__text">
-                  Интернет-магазин вязаных игрушек
+                  Интернет-магазин вязаных&nbsp;игрушек
                 </p>
                 <button class="site-details__button" type="submit">
                   9 900 руб.
@@ -306,10 +303,8 @@
               </div>
             </li>
             <li class="template-examples__item site-example">
-              <div class="site-example__top top">
-                <div class="top__item"></div>
-                <div class="top__item"></div>
-                <div class="top__item"></div>
+              <div class="site-example__top">
+                <img src="./img/browser.svg" width="360" height="40" alt="Top">
               </div>
               <div class="site-example__img">
                 <picture>
@@ -332,10 +327,8 @@
               </div>
             </li>
             <li class="template-examples__item site-example">
-              <div class="site-example__top top">
-                <div class="top__item"></div>
-                <div class="top__item"></div>
-                <div class="top__item"></div>
+              <div class="site-example__top">
+                <img src="./img/browser.svg" width="360" height="40" alt="Top">
               </div>
               <div class="site-example__img">
                 <picture>
@@ -364,16 +357,16 @@
           <h2 class="visually-hidden">Навигация по страницам шаблонов</h2>
           <ul class="template-pagination__list">
             <li class="template-pagination__item">
-              <a>1</a>
+              <a class="template-pagination__link template-pagination__link--active">1</a>
             </li>
             <li class="template-pagination__item">
-              <a href="#">2</a>
+              <a class="template-pagination__link" href="#">2</a>
             </li>
             <li class="template-pagination__item">
-              <a href="#">3</a>
+              <a class="template-pagination__link" href="#">3</a>
             </li>
             <li class="template-pagination__item">
-              <a href="#">Следующая</a>
+              <a class="template-pagination__link template-pagination__link--next" href="#">Следующая</a>
             </li>
           </ul>
         </section>
