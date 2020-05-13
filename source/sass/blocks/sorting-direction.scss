@@ -1,3 +1,54 @@
+.sorting-direction__label {
+  display: inline-block;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.sorting-direction__label::before {
+  display: inline-block;
+  border: 10px solid rgba($black, 0.3);
+  border-right-width: 5px;
+  border-right-color: transparent;
+  border-left-width: 5px;
+  border-left-color: transparent;
+  content: "";
+  transition: 0.4s ease;
+}
+
+.sorting-direction__label--down:hover::before,
+.sorting-direction__label--down:focus::before {
+  border-top-color: rgba($black, 0.6);
+}
+
+.sorting-direction__label--down:active::before {
+  border-top-color: $black;
+}
+
+.sorting-direction__input:checked + .sorting-direction__label--down::before {
+  border-top-color: $black;
+}
+
+.sorting-direction__label--up:hover::before,
+.sorting-direction__label--up:focus::before {
+  border-bottom-color: rgba($black, 0.6);
+}
+
+.sorting-direction__label--up:active::before {
+  border-bottom-color: $black;
+}
+
+.sorting-direction__input:checked + .sorting-direction__label--up::before {
+  border-bottom-color: $black;
+}
+
+.sorting-direction__label--down::before {
+  border-bottom-width: 0;
+}
+
+.sorting-direction__label--up::before {
+  border-top-width: 0;
+}
+
 .sorting-direction {
   display: flex;
   width: 40px;
@@ -6,27 +57,7 @@
 .sorting-direction__item {
   margin-right: 18px;
 
-  &:last-of-direction {
+  &:last-of-type {
     margin-right: 0;
   }
-}
-
-.sorting-direction__label {
-
-  opacity: 0.3;
-  cursor: pointer;
-  transition: 0.4s ease;
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 1;
-  }
-}
-
-.sorting-direction__input:checked + .sorting-direction__label {
-  opacity: 1;
 }

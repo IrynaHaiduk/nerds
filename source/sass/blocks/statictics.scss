@@ -9,18 +9,25 @@
 }
 
 .statictics__subtitle {
- @include subtitle;
- text-align: center;
- margin-bottom: 41px;
+  @include subtitle;
+  text-align: center;
+  margin-bottom: 41px;
 }
 
 .statictics__table {
   border-collapse: collapse;
-  width: 100%;
+  width: 360px;
+  display: block;
+}
+
+.statictics__item {
+  width: 360px;
+  display: block;
 }
 
 .statictics__data {
-  width: calc(100%/3);
+  width: calc(100% / 3);
+
   @include font(45px, 45px, 700);
   padding-bottom: 19px;
 
@@ -35,4 +42,5 @@
 
 .statictics__text {
   @include text-little;
+  width: calc(100% / 3);
 }

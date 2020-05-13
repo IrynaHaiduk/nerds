@@ -5,9 +5,6 @@
   padding-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
-}
-
-.contacts  {
   position: relative;
 
   @include container;
@@ -42,6 +39,6 @@
 }
 
 .contacts__button {
- @include  link-btn($red, $red2, $red3);
- width: 220px;
+  @include link-btn($red, $red2, $red3);
+  width: 220px;
 }

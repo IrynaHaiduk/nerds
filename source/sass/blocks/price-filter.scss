@@ -5,4 +5,6 @@
 .price-filter__title {
   @include legend;
   margin-bottom: 48px;
+  display: block;
+  width: 260px;
 }

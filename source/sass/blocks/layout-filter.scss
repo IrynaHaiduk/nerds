@@ -6,6 +6,7 @@
   @include legend;
   display: block;
   margin-bottom: 16px;
+  width: 260px;
 }
 
 .layout-filter__item {
@@ -21,7 +22,6 @@
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
   padding-left: 35px;
 }
 
@@ -57,7 +57,6 @@
   transition: 0.3s ease;
 }
 
-
 .layout-filter__input:hover + .layout-filter__label::before {
   border-color: $dark-grey5;
 }
@@ -67,7 +66,7 @@
 }
 
 .layout-filter__input:hover + .layout-filter__label {
-color: $dark-grey5;
+  color: $dark-grey5;
 }
 
 .layout-filter__input:focus + .layout-filter__label::before {
@@ -76,7 +75,6 @@ color: $dark-grey5;
 
 .layout-filter__input:disabled + .layout-filter__label::before {
   border-color: rgba($grey3, 0.2);
-
 }
 
 .layout-filter__input:disabled + .layout-filter__label::after {

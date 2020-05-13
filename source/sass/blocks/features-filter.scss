@@ -6,6 +6,7 @@
   @include legend;
   display: block;
   margin-bottom: 16px;
+  width: 260px;
 }
 
 .features-filter__item {
@@ -21,8 +22,8 @@
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
   padding-left: 35px;
+  width: 260px;
 }
 
 .features-filter__input:not(:checked) + .features-filter__label::before,

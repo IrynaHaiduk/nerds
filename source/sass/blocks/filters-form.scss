@@ -1,6 +1,8 @@
 .filters-form__item {
   border: none;
   padding: 0;
+  width: 260px;
+  display: block;
 }
 
 .filters-form__button {
@@ -9,5 +11,3 @@
 
   @include grey-btn;
 }
-
-

@@ -1,6 +1,7 @@
 .template-pagination__list {
   display: flex;
   margin-bottom: 58px;
+  flex-wrap: wrap;
 }
 
 .template-pagination__item {

@@ -14,7 +14,7 @@
 .site-example__img {
   width: 360px;
   height: 576px;
-  box-shadow: 0 0 0 1px  $light-grey5;
+  box-shadow: 0 0 0 1px $light-grey5;
 
   & img {
     width: 360px;
@@ -40,5 +40,5 @@
 }
 
 .site-example:hover .site-example__img {
-  border: none;
+  box-shadow: none;
 }

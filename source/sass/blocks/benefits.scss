@@ -2,6 +2,7 @@
   display: none;
   background-repeat: no-repeat;
   padding: 78px 0 80px 0;
+  background-size: contain;
 
   &:nth-of-type(1) {
     background-image: url("../img/slide1.png");
@@ -45,8 +46,8 @@
 }
 
 .benefits__link {
- @include link-btn($red, $red2, $red3);
- width: 240px;
+  @include link-btn($red, $red2, $red3);
+  width: 240px;
 }
 
 .controls__input--1:checked ~ .benefits .benefits__item:nth-child(1) {

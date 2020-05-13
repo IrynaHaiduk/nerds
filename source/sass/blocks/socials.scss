@@ -1,6 +1,7 @@
 .socials {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .socials__item {
@@ -31,7 +32,7 @@
     opacity: 0.3;
   }
 
-  &:active  {
+  &:active {
     background-color: $red3;
   }
 }

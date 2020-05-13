@@ -1,6 +1,6 @@
 .presentation {
-width: 660px;
-padding-top: 36px;
+  width: 660px;
+  padding-top: 36px;
 }
 
 .presentation__title {
@@ -19,23 +19,22 @@ padding-top: 36px;
 }
 
 .presentation__item {
- @include text-little;
- margin-bottom: 30px;
- padding-left: 36px;
- position: relative;
+  @include text-little;
+  margin-bottom: 30px;
+  padding-left: 36px;
+  position: relative;
 
- &:last-of-type {
-   margin-bottom: 0;
- }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
- &::before {
-   content: "";
-   width: 25px;
-   height: 2px;
-   background-color: $red;
-   position: absolute;
-   left: 0;
-   top: 50%;
- }
+  &::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
 }
-
