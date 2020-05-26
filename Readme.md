@@ -1,6 +1,6 @@
 ﻿Проект «Nёrds Design Studio» 
 
-Сылка на проект: https://haiduk2019.github.io/nerds/build/index.html
+Ссылка на проект: https://haiduk2019.github.io/nerds/build/index.html
 
 Скопировать проект:
 
