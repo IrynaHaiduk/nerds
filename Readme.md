@@ -1,13 +1,6 @@
-﻿Проект «Nёrds Design Studio» 
+﻿# Project «Nёrds Design Studio» 
 
-Ссылка на проект: https://haiduk2019.github.io/nerds/build/index.html
-
-Скопировать проект:
-
-1. Клонируем репозиторий на свой компьютер:
- git clone SSH-адрес_проекта
-2. Устанавливаем зависимости: 
- npm install
-3. Запускаем проект: 
- npm start
+- [DEMO LINK](https://irynahaiduk.github.io/nerds/build/index.html#)
+- Tech stack: HTML5, SCSS, JS, BEM methodology
+- Desktop version
 
